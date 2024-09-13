@@ -9,8 +9,10 @@ obj/
 *.pubxml
 *.pubxml.user
 
-# Angular
-node_modules/
+# Node.js
+msal-react/node_modules
+msal-angular/node_modules
+msal-node-backend/node_modules
 dist/
 *.log
 .env
