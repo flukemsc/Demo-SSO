@@ -10,9 +10,12 @@ obj/
 *.pubxml.user
 
 # Node.js
-msal-react/node_modules
-msal-angular/node_modules
+msal-angular-frontend/node_modules/*
+msal-angular-frontend/.angular/*
+msal-angular-frontend/.vscode/*
 msal-node-backend/node_modules
+msal-react-frontend/node_modules/*
 dist/
 *.log
 .env
+msal-angular-frontend/.editorconfig

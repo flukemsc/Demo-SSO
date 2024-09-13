@@ -1,0 +1,15 @@
+<div>
+  <a class="title" href="/">{{ title }}</a>
+  <div class="footer-text">Already Login</div>
+  <button mat-raised-button *ngIf="!loginDisplay" (click)="login()">
+    Login
+  </button>
+  <button
+    mat-raised-button
+    color="accent"
+    *ngIf="loginDisplay"
+    (click)="logout()"
+  >
+    Logout
+  </button>
+</div>
