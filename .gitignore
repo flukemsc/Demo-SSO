@@ -1,0 +1,16 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.csproj.vspscc
+*.pubxml
+*.pubxml.user
+
+# Angular
+node_modules/
+dist/
+*.log
+.env
