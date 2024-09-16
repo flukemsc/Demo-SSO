@@ -18,9 +18,9 @@ import {
  */
 export const msalConfig: Configuration = {
   auth: {
-    clientId: '2e0a42fa-819f-46bd-8599-4e7163baa142', // This is the ONLY mandatory field that you need to supply.
+    clientId: '568810be-3d32-4d95-8236-04ec52c9baac', // This is the ONLY mandatory field that you need to supply.
     authority:
-      'https://login.microsoftonline.com/2c8d0fd7-154d-4fe0-8838-6809247421dd', // Replace the placeholder with your tenant subdomain
+      'https://login.microsoftonline.com/2ac7cab9-b269-480e-84ed-2ee3b14d3045', // Replace the placeholder with your tenant subdomain
     redirectUri: '/', // Points to window.location.origin by default. You must register this URI on Microsoft Entra admin center/App Registration.
     postLogoutRedirectUri: '/', // Points to window.location.origin by default.
   },

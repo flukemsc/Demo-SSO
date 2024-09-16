@@ -7,11 +7,11 @@ const BearerStrategy = require("passport-azure-ad").BearerStrategy;
 
 // Set the Azure AD B2C options
 const options = {
-  identityMetadata: `https://login.microsoftonline.com/2c8d0fd7-154d-4fe0-8838-6809247421dd/v2.0/.well-known/openid-configuration`,
-  clientID: "2e0a42fa-819f-46bd-8599-4e7163baa142",
+  identityMetadata: `https://login.microsoftonline.com/2ac7cab9-b269-480e-84ed-2ee3b14d3045/v2.0/.well-known/openid-configuration`,
+  clientID: "568810be-3d32-4d95-8236-04ec52c9baac",
   isB2C: false,
   issuer:
-    "https://login.microsoftonline.com/2c8d0fd7-154d-4fe0-8838-6809247421dd/v2.0",
+    "https://login.microsoftonline.com/2ac7cab9-b269-480e-84ed-2ee3b14d3045/v2.0",
   validateIssuer: true,
   loggingLevel: "info",
   passReqToCallback: false,
