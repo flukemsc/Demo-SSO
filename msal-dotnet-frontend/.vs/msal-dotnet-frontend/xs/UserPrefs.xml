@@ -1,40 +1,57 @@
 ﻿<Properties StartupConfiguration="{54A3A7DE-88B9-4D85-96DA-742CE0F374FB}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.msal-dotnet-frontend PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Pages/_ViewStart.cshtml" />
-      <File FileName="Pages/_ViewImports.cshtml" />
-      <File FileName="Pages/Index.cshtml.cs" Line="20" Column="1" />
+      <File FileName="Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml.cs" Line="16" Column="17" />
       <File FileName="Pages/Privacy.cshtml.cs" />
       <File FileName="wwwroot/js/site.js" />
       <File FileName="wwwroot/css/site.css" />
-      <File FileName="Program.cs" Line="18" Column="1" />
-      <File FileName="Pages/Shared/_Layout.cshtml.css" />
-      <File FileName="Pages/Shared/_ValidationScriptsPartial.cshtml" />
-      <File FileName="Pages/Error.cshtml" />
-      <File FileName="Pages/Index.cshtml" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="4" Column="5" />
-      <File FileName="appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="34" Column="18" />
+      <File FileName="Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="Pages/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Index.cshtml" Line="9" Column="41" />
+      <File FileName="appsettings.json" Line="8" Column="44" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="Pages/Privacy.cshtml" Line="1" Column="1" />
+      <File FileName="Pages/Shared/_Layout.cshtml" Line="11" Column="7" />
+      <File FileName="Properties/launchSettings.json" Line="7" Column="23" />
+      <File FileName="Pages/login.cshtml" Line="6" Column="11" />
+      <File FileName="Pages/login.cshtml.cs" Line="15" Column="6" />
+      <File FileName="Pages/Shared/_LoginPartial.cshtml" Line="13" Column="62" />
+      <File FileName="Pages/Shared/_LoginPartial.cshtml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="msal-dotnet-frontend" expanded="True">
+          <Node name="msal-dotnet-frontend">
             <Node name="msal-dotnet-frontend">
-              <Node name="Pages" expanded="True">
-                <Node name="Index.cshtml" expanded="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Microsoft.Identity.Web" selected="True" />
+                  <Node name="Microsoft.Identity.Web.UI" selected="True" />
+                </Node>
               </Node>
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="Pages">
+                <Node name="Shared" expanded="True">
+                  <Node name="_LoginPartial.cshtml" expanded="True" />
+                </Node>
+                <Node name="login.cshtml" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.msal-dotnet-frontend PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

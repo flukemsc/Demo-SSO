@@ -1,6 +1,7 @@
 ﻿using Microsoft.Identity.Web;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.Identity.Web.UI;
+using Microsoft.AspNetCore.Rewrite;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +11,20 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
                  .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
 
+builder.Services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.AuthenticationScheme, options =>
+{
+    options.Events.OnSignedOutCallbackRedirect = context =>
+    {
+        context.Response.Redirect("/"); // หน้า redirect หลัง sign out
+        context.HandleResponse();
+        return Task.CompletedTask;
+    };
+});
+
+
 builder.Services.AddRazorPages()
                 .AddMicrosoftIdentityUI();
+
 
 var app = builder.Build();
 
@@ -30,8 +43,17 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseRewriter(
+    new RewriteOptions().Add(
+        context => {
+            if (context.HttpContext.Request.Path == "/MicrosoftIdentity/Account/SignedOut")
+            { context.HttpContext.Response.Redirect("/login"); }
+        })
+);
 
 app.MapRazorPages();
+app.MapControllers();
+
 
 app.Run();
 
